@@ -1,0 +1,115 @@
+.productsContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #f4f4f4;
+}
+.searchBlock{
+    height: 2rem;
+    width: 15rem;
+    font-family: "Adobe Hebrew", serif;
+    font-size: 1rem;
+}
+
+.productsBlock{
+    height: 20rem;
+    width: 30rem;
+    display: grid;
+    grid-template-rows:     minmax(auto, 30%)
+                            minmax(auto, 30%)
+                            minmax(auto, 1fr);
+    grid-template-columns:  minmax(auto, 50%)
+                            minmax(auto, 50%);
+    background: white;
+    border: 0.05rem solid gray;
+    margin-top: 2rem;
+}
+
+.productName{
+    grid-row:    1;
+    grid-column: 2;
+    font-family: "Adobe Hebrew", serif;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #0fc19e;
+}
+
+.productPictureBlock{
+    grid-row:    1 / span 3;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productPicture{
+    /*border: 0.1rem solid #0fc19e;*/
+    height: 15rem;
+    width: 10rem;
+    background-size: contain;
+    overflow: hidden;
+    background: white;
+}
+
+.productPrice{
+    grid-row:    2;
+    grid-column: 2;
+    font-family: "Adobe Hebrew", serif;
+    font-size: 1.3rem;
+    color: #0fc19e;
+}
+.descriptionButton{
+    grid-row:    3;
+    grid-column: 2;
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 2rem;
+    width: 5rem;
+    background-color: #0fc19e;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+/*------------------*/
+
+.productDescription{
+    height: 15rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border: 0.05rem solid gray;
+}
+.specificationsLabel{
+    display: flex;
+    justify-content: center;
+    font-family: "Adobe Hebrew", serif;
+    font-size: 1.5rem;
+    color: #0fc19e;
+}
+
+.specificationsBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.internalMemory,
+.ram,
+.dimensions,
+.displayResolution{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Adobe Hebrew", serif;
+    font-size: 1rem;
+    color: grey;
+}
+
+
+
